@@ -1,0 +1,222 @@
+body{
+    background-color: #d1cfcf;
+}
+
+
+
+/* Estilos base para el contenedor y los iconos */
+.cont {
+    width: 300px; /* Ancho inicial del contenedor */
+    height: 60px; /* Altura del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: #ffffff; /* Color de fondo */
+    display: flex; /* Usamos flexbox para alinear los iconos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    margin: 0 auto; /* Centrado del contenedor en la página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 10px;
+  }
+  
+  /* Estilo para los iconos dentro del contenedor */
+  .cont i {
+    font-size: 30px; /* Tamaño de los iconos */
+    color: #333; /* Color inicial de los iconos */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    margin: 0 10px; /* Espaciado entre iconos */
+  }
+  
+  /* Cambio de color de los iconos cuando el cursor pasa por encima */
+  .cont i:hover {
+    color: #007bff; /* Color al hacer hover */
+  }
+  
+  /* Media Queries para hacer el contenedor responsivo */
+  @media (max-width: 768px) {
+    .cont {
+      width: 250px; /* Ancho reducido en pantallas más pequeñas */
+      height: 60px; /* Altura más pequeña */
+    }
+  
+    .cont i {
+      font-size: 24px; /* Reducir el tamaño de los iconos */
+      margin: 0 8px; /* Reducir el espacio entre iconos */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cont {
+      width: 200px; /* Ancho aún más pequeño para pantallas muy pequeñas */
+      height: 70px; /* Ajustamos la altura */
+    }
+  
+    .cont i {
+      font-size: 20px; /* Reducir aún más el tamaño de los iconos */
+      margin: 0 5px; /* Menor espacio entre los iconos */
+    }
+  }
+  
+
+  /* Estilo para el contenedor del input y el botón */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px; /* Bordes redondeados para el contenedor */
+    overflow: hidden; /* Para que los elementos internos no sobresalgan del contenedor redondeado */
+    width: 100%; /* Aseguramos que el contenedor ocupe todo el ancho disponible */
+    max-width: 600px; /* El contenedor no se hará más grande de 600px */
+    margin: 0 auto; /* Centra el buscador en la página */
+    box-shadow: 0 10px 10px rgba(8, 6, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para el input de búsqueda */
+.input-group .form-control {
+    border-radius: 50px 0 0 50px; /* Bordes redondeados solo a la izquierda */
+    padding-left: 20px; /* Espacio a la izquierda para el texto */
+    padding-right: 20px; /* Espacio a la derecha para el botón */
+    border: 2px solid #ffffff; /* Borde negro */
+    background-color: transparent; /* Fondo transparente */
+    color: #000; /* Texto negro */
+    height: 40px; /* Ajustamos la altura para que sea coherente con el botón */
+    font-size: 1rem; /* Aseguramos que el texto sea legible */
+    flex-grow: 1; /* El input ocupará el espacio restante */
+    outline: none; /* Eliminar el borde de enfoque del input */
+}
+
+/* Estilo para el botón de búsqueda */
+.input-group .btn {
+    border-radius: 0 50px 50px 0; /* Bordes redondeados solo a la derecha */
+    background-color: transparent; /* Fondo transparente para el botón */
+    color: #000; /* Color del texto (icono) negro */
+    border: 2px solid #ffffff; /* Borde negro para el botón */
+    padding: 10px 20px; /* Ajustamos el tamaño del botón */
+    cursor: pointer;
+    height: 40px; /* Igual que el input */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Asegura que el icono esté centrado en el botón */
+}
+
+
+.destination-card img {
+    width: 150%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: 300px; /* Fijar la altura */
+    object-fit: cover; /* Recorta la imagen para que se ajuste */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Anchura del botón cuadrado */
+    height: 60px; /* Altura del botón cuadrado */
+    background-color: #ffffff; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación */
+}
+
+.icon-container:hover {
+    background-color: #e0e0e0; /* Cambia de color al pasar el cursor */
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+.icon-circle i {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #007bff; /* Color del ícono */
+}
+
+.custom{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+
+/* Estilo para el modal */
+.card {
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.overview {
+    color: #007bff;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.info div {
+    text-align: center;
+}
+
+.info div span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.englobado {
+    align-items: center;
+    height: 70px;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2f50aa;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.book {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 40px;
+    width: 130px;
+}
+
+.book:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.info i {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.img-fluid{
+    height: 600px;
+}
+
+.text-muted{
+    text-decoration: none;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripWayo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <div class="container mt-4">
+     
+
+        <!-- Search -->
+        <div class="input-group mt-3">
+            <input type="text" class="form-control " style="background-color: white;" placeholder="Buscar aquí" aria-label="Buscar">
+            <button class="btn btn-outline-secondary" type="button" style="background-color: white;"><i class="bi bi-search"></i></button>
+        </div>
+
+
+
+        <!-- Popular Destinations -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+ 
+     
+            <a href="viajes.html" class="text-muted"><h3>Return</h3></a>
+        </div>
+        <div class="row mt-2" id="popular-destinations">
+            <!-- Las cartas se generarán aquí -->
+        </div>
+
+        <!-- Top Adventure Trips -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+        
+            <a href="viajes.html" class="text-muted"><h3>Return</h3></a>
+        </div>
+        <div class="row mt-2" id="adventure-trips">
+            <!-- Las cartas se generarán aquí -->
+        </div>
+    </div>
+
+    <!-- Modal para mostrar detalles de la tarjeta -->
+    <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 25px 25px 30px 30px;height: 550px; width: 400px;">
+                  <img id="modal-image" src="" alt="Image" class="img-fluid rounded mb-3">
+                  
+                <div class="modal-body">
+                   <h5 id="modal-name"></h5>
+                    <p id="modal-price"></p>
+                    <p id="modal-rating"></p>
+                    <p id="modal-description">Descripción del destino...</p>
+                     
+                
+                </div>    <div class="englobado">
+      <span><p>Total Price</p>$1999</span>
+      <button class="book">Book Now</button>
+    </div>
+  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="navbar fixed-bottom bg">
+        <div class="cont d-flex justify-content-around">
+            <a href="#" class="text-secondary"><i class="bi bi-house-door-fill"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-bell"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-gear"></i></a>
+            <a href="perfil.html" class="text-secondary"><i class="bi bi-person"></i></a>
+        </div>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
